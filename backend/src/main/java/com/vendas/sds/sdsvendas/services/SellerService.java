@@ -18,8 +18,8 @@ public class SellerService {
 	
 	
 	public List<SellerDTO> findAll(){
-		List<Seller> result =  sellerRepository.findAll();
-		return result.stream().map(x -> new SellerDTO(x)).collect(Collectors.toList());
+		List<Seller> listOfSellers =  sellerRepository.findAll();
+		return listOfSellers.stream().map(x -> new SellerDTO(x)).collect(Collectors.toList());
 	}
 
 }
