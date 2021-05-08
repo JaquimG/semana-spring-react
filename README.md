@@ -15,14 +15,22 @@ Caso queira adicionar o bootstrap ao projeto, use: yarn add bootstrap
 
 Caso queira adicionar Apex Charts, use: yarn add apexcharts && yarn add react-apexcharts
 
+## Trabalhando com rotas
+
+Para criar rotas em seu projeto react, primeiramente adicione o router-dom com os comandos: yarn add react-router-dom && yarn add @types/react-router-dom -D
+
+## Realizando requisições HTTP
+
+Para realizar as requisições HTTP, utilize: yarn add axios
+
 ## Fazendo deploy no heroku
 
 Caso queira fazer deploy e possua o heroku cli, use:
 
-''
 heroku -v
 heroku login
 heroku git:remote -a <nome-do-app>
 git remote -v
-git subtree push --prefix backend heroku main
-''
+git subtree push --prefix <nome_do_projeto> heroku main
+  
+Vale lembrar que, para esses comandos, o proejeto deverá estar no github
