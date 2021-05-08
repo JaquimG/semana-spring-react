@@ -19,10 +19,10 @@ Caso queira adicionar Apex Charts, use: yarn add apexcharts && yarn add react-ap
 
 Caso queira fazer deploy e possua o heroku cli, use:
 
-'''
+''
 heroku -v
 heroku login
 heroku git:remote -a <nome-do-app>
 git remote -v
 git subtree push --prefix backend heroku main
-'''
+''
